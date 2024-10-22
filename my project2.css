@@ -1,0 +1,294 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    padding-top: 80px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: #0311cf;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo:hover {
+    color: #fafafa;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1px;
+}
+
+nav a {
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    margin-right: 40px;
+    transition: all .07s ease-in-out;
+}
+
+nav a:hover {
+    opacity: 1;
+    color: #007bff;
+}
+
+#hero {
+    background-color: #000;
+    position: relative;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px solid #0311cf;
+}
+
+#hero h2 {
+    font-size: 3.3rem;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 60px;
+}
+
+.fade-in-text {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.fade-in-text1 {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#hero button {
+    background-color: #000988;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    color: #ffffff;
+    opacity: 0.6;
+}
+
+#hero button:hover {
+    background-color: #c72e00;
+    opacity: 1;
+}
+
+.vbtv {
+    color: white;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.championship {
+    margin-bottom: 10px;
+}
+
+.team-grid, .players-grid, .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-item, .player-item, .news-item {
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.team-item:hover, .player-item:hover, .news-item:hover {
+    transform: translateY(-5px);
+}
+
+.team-item img, .player-item img, .news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-content, .player-content, .news-content {
+    padding: 15px;
+}
+
+.newsa {
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+
+.newsa:hover {
+    opacity: 1;
+}
+
+.playera {
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+
+.playera:hover {
+    color: white;
+    opacity: 1;
+}
+
+.teama {
+    text-decoration: none;
+    color: white;
+    opacity: 0.6;
+}
+
+.teama:hover {
+    color: white;
+    opacity: 1;
+}
+
+#japan {
+    color: #fa0202;
+}
+
+#poland {
+    color: #f73e3e;
+}
+
+#brazil {
+    color: #d5fa02;
+}
+
+#nishida {
+    color: #fa0202;
+}
+
+#leon {
+    color: #f73e3e;
+}
+
+#darlan {
+    color: #d5fa02;
+}
+
+.video-background {
+    position: relative;
+    height: 600px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-background iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    max-width: 800px;
+    max-height: 450px;
+    border: 4px solid #000988;
+    z-index: 1;
+}
+
+.video-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+footer {
+    background-color: #1a1a1a;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #ffffff;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+footer .social-media {
+    margin-right: 35px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+footer .social-media li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.instagram {
+    color: #fafafa;
+    opacity: 0.5;
+}
+
+.instagram:hover {
+    opacity: 1;
+    color: #b8078c;
+}
+
+.youtube {
+    color: #fafafa;
+    opacity: 0.5;
+}
+
+.youtube:hover {
+    color: #fa0202;
+    opacity: 1;
+}
